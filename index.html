@@ -42,9 +42,86 @@
             padding: 10px;
             margin: 0%;
         }
+
+         /* for small device*/
+         @media screen and (max-width:600px){
+            .card_header{
+                justify-content: left;
+            }
+            .card{
+                width:250px;
+                margin:20px;
+            }
+            .img{
+            height:20px;
+            }
+            .heading{
+            font-size:17px;
+            }
+            .info{
+            font-size:12px;
+            }
+
+        }
+
+         /* for normal device*/
+        @media screen and (min-width:601px) and (max-width:768px){
+            .card_header{
+                justify-content: left;
+            }
+            .card{
+                width:100%;
+                margin-top:20px;
+            }
+            .img{
+            height:30px;
+        }
+
+            
+        }
+
+        /* for tablet device*/
+         @media screen and (min-width:769px) and (max-width:992px){
+            .card_header{
+                justify-content: left;
+            }
+            .card{
+                width:250px;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+            .img{
+            height:25px;
+            }
+            .heading{
+            font-size:20px;
+            }
+            .info{
+            font-size:14px;
+            }
+        }
+
+        /* for large device*/
+        @media screen and (min-width:993px) and (max-width:1200px){
+            .card{
+            width:280px;
+            margin-left: 100px;
+            margin-top: 50px;
+            }
+            .img{
+            height:30px;
+            }
+            .heading{
+            font-size:25px;
+            }
+            .info{
+            font-size:16px;
+            }
+        }
         </style>
 </head>
 <body>
+    <div class="card_header">
     <div class="card">
         <div class="header">
             <img class="img" src="https://cdn.roadtocode.org/unique-features/professional-network-md.png"/>
@@ -60,7 +137,7 @@
         </div>
         <p class="info">We help you to build a professional resume that stands out from the crowd.</p>
     </div>
-    
+
     <div class="card">
         <div class="header">
             <img class="img" src="https://cdn.roadtocode.org/unique-features/mock-interviews-md.png"/>
@@ -68,5 +145,7 @@
         </div>
         <p class="info">Get prepared for the job interviews with our mock interviews and feedback from the industry experts.</p>
     </div>
+
+</div>
 </body>
 </html>
